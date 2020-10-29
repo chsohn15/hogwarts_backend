@@ -1,6 +1,6 @@
 class UsersController < ApplicationController
 
-    skip_before_action :logged_in?, only: [:create]
+    #skip_before_action :logged_in?, only: [:create]
     
     def index 
         users = User.all 
@@ -13,8 +13,8 @@ class UsersController < ApplicationController
     end
 
     def update
+
         user = User.find_by(id: params[:id])
-        
         user.update(user_params)
         render json: user, include: [:character, :teacher => {include: [:announcements]}, :student_assignments => {include: [:assignment]}, :students => {include: [:student_assignments => {include: [:assignment]}]}], except: [:password_digest], methods: [:full_name]
     end
