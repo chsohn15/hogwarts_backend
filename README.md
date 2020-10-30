@@ -1,24 +1,7 @@
-# The Harry Potter Writing App
+## The Harry Potter Writing App
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This app is designed to engage students in writing by providing an immersive experience into the Harry Potter world. New student users can take a sorting hat quiz to determine their Hogwarts house, select an alter ego from that house, view their teacher's announcements, and complete writing assignments. Teacher users can view their students, make announcements to their classes, and give feedback and grades on student assignments. 
 
-Things you may want to cover:
+See the video demo here: https://youtu.be/IDtMxssicik. 
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+To use the app, clone this repository, bundle install, and run "rails s" to begin the server. When operating the frontend, open the 'hogwarts_react' repository and run "npm start." 
